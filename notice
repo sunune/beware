@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Now under destruction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #151515;
+      --text: #D9D9D9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+                   "Noto Sans KR", "Malgun Gothic", sans-serif;
+      display: flex;
+      justify-content: center;   /* 가로 중앙 정렬 [web:2][web:3] */
+      align-items: center;       /* 세로 중앙 정렬 [web:2][web:3] */
+    }
+
+    .wrap {
+      text-align: left;
+      /* 모바일에서 좌우 여백 확보 */
+      padding: 0 6vw;
+    }
+
+    .line-en {
+      font-weight: 700;
+      /* 최소 32px, 기본은 5vw, 최대 56px 정도로 유동 폰트 크기 */
+      font-size: clamp(32px, 5vw, 56px);  /* 뷰포트 기반 반응형 폰트 [web:7][web:11][web:17] */
+      line-height: 1.08;
+    }
+
+    .line-ko {
+      margin-top: 1.4rem;
+      font-weight: 600;
+      font-size: clamp(14px, 2.7vw, 20px); /* 한글도 유사하게 반응형 */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="line-en">
+      Now<br>
+      under<br>
+      destruction
+    </div>
+    <div class="line-ko">
+      사이트 리뉴얼이<br>
+      진행 중입니다.
+    </div>
+  </div>
+</body>
+</html>
