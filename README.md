@@ -1,3 +1,2 @@
 # beware-site-renewal
-site renewal
-hi everyone
+site under construction
